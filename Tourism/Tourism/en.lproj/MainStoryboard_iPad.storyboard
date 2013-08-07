@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="F9G-h9-NuV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Attractions Table View Controller - Discover Costa Rica-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="GCSAttractionsTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZO-XU-4Tf">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AAD-OF-YBd">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="960" id="UFi-OH-NH4"/>
+                                    <constraint firstAttribute="width" constant="768" id="gwy-of-1Bp"/>
+                                </constraints>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="ywh-xl-IrE"/>
+                                    <outlet property="delegate" destination="2" id="BcW-Ed-Xyj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AAD-OF-YBd" firstAttribute="top" secondItem="mZO-XU-4Tf" secondAttribute="top" constant="-250" id="AEd-vO-QaC"/>
+                            <constraint firstItem="AAD-OF-YBd" firstAttribute="leading" secondItem="mZO-XU-4Tf" secondAttribute="leading" constant="-12" id="EIy-2j-bvn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Discover Costa Rica" id="cfh-vO-ySI">
+                        <barButtonItem key="rightBarButtonItem" title="Config" id="TBg-6I-Rgd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ok-X9-ze7">
+            <objects>
+                <navigationController id="F9G-h9-NuV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="64D-mp-rmO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="bHW-DY-GmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7i-cH-klc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="-174"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="GCSAttractionsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GCSAttractionsTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
