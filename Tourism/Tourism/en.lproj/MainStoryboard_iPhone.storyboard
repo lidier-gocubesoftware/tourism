@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="U8x-88-lkJ">
-                        <barButtonItem key="rightBarButtonItem" image="8configIcon.png" id="c9f-UO-Aak"/>
+                        <barButtonItem key="rightBarButtonItem" image="8config_icon_universal_universal.png" id="c9f-UO-Aak"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -71,7 +71,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8configIcon.png" width="16" height="16"/>
+        <image name="8config_icon_universal_universal.png" width="16" height="16"/>
     </resources>
     <classes>
         <class className="GCSAttractionsTableViewController" superclassName="UITableViewController">
